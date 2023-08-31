@@ -13,6 +13,8 @@ module "vpc" {
   database_subnets                       = var.vpc_database_subnets
   create_database_subnet_group           = var.vpc_create_database_subnet_group
   create_database_internet_gateway_route = var.create_database_internet_gateway_route
+  # create_database_internet_gateway_route = true
+  # create_database_nat_gateway_route = true
 
   # Configure NAT Gateway
   enable_nat_gateway = var.vpc_enable_nat_gateway
