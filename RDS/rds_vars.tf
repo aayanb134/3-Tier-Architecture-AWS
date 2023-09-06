@@ -30,7 +30,7 @@ variable "db_name" {
 variable "username" {
   description = "Username for the master DB user"
   type        = string
-  default     = "CreditToMohammedAjharHussain"
+  default     = "a_username_innit"
 }
 
 variable "password" {
@@ -39,7 +39,7 @@ variable "password" {
   The password provided will not be used if the variable create_random_password is set to true.
   EOF
   type        = string
-  default     = "1.GiveMeJob?"
+  default     = "kenobi"
   sensitive   = true
 }
 
