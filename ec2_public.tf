@@ -11,7 +11,7 @@ module "ec2_public" {
   # monitoring             = true
   vpc_security_group_ids = [module.public_bastion_sg.this_security_group_vpc_id]
   subnet_id              = module.vpc.public_subnets[0]
-  user_data              = file("${path.module}/app1-install.sh")
+  user_data              = file("${path.module}/webapp.sh")
 
   tags = {
     Terraform   = "true"
